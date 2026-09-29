@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Angelo Ferreira da Silva">
+    <meta name="description" content="Formulário sobre dinossauros.">
+    <title>Mundo dos Dinossauros - Pesquisa</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pesquisa sobre Dinossauros</h1>
+        <p>Preencha o formulário com suas preferências.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="especies.html">Espécies</a> |
+        <a href="eras.html">Eras</a> |
+        <a href="fosseis.html">Fósseis</a> |
+        <a href="contato.html">Pesquisa</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Formulário</h2>
+
+            <article>
+
+                <form action="index.html" method="get">
+
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <br><br>
+
+                    <label for="data">Data da pesquisa:</label><br>
+                    <input type="date" id="data" name="data" required>
+                    <br><br>
+
+                    <label for="dinossauro">Dinossauro favorito:</label><br>
+                    <input list="dinossauros" id="dinossauro" name="dinossauro" placeholder="Escolha ou digite"
+                        required>
+
+                    <datalist id="dinossauros">
+                        <option value="Tyrannosaurus rex">
+                        <option value="Triceratops">
+                        <option value="Stegosaurus">
+                        <option value="Velociraptor">
+                        <option value="Brachiosaurus">
+                    </datalist>
+
+                    <br><br>
+
+                    <label for="interesse">
+                        Nível de interesse em paleontologia:
+                    </label><br>
+
+                    <input type="range" id="interesse" name="interesse" min="0" max="10">
+
+                    <br><br>
+
+                    <label for="arquivo">
+                        Envie uma imagem ou trabalho sobre dinossauros:
+                    </label><br>
+
+                    <input type="file" id="arquivo" name="arquivo">
+
+                    <br><br>
+
+                    <label for="comentario">Comentário:</label><br>
+
+                    <textarea id="comentario" name="comentario" placeholder="Escreva o que mais gosta nos dinossauros"
+                        required></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+
+            </article>
+        </section>
+
+        <aside>
+            <h2>Curiosidade</h2>
+
+            <p>
+                A paleontologia permite estudar organismos que viveram
+                há milhões de anos por meio de fósseis e outros vestígios.
+            </p>
+        </aside>
+
+        <section>
+            <h2>Sobre a pesquisa</h2>
+
+            <p>
+                O objetivo é conhecer as preferências dos visitantes
+                sobre dinossauros e paleontologia.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Projeto Mundo dos Dinossauros -
+            Desenvolvimento Front-End para Web
+        </p>
+
+        <address>
+            Autor: Angelo Ferreira da Silva
+        </address>
+
+    </footer>
+
+</body>
+
+</html>
